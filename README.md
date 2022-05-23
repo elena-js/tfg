@@ -7,4 +7,4 @@
 # data.csv -> csv creado a partir de preprocess.py
 # data1.csv -> csv creado a partir de preprocess1.py
 # data2.csv -> csv creado a partir de preprocess2.py
-# data_es1 -> csv creado a partir de preprocess_es1.py
+ data_es1 -> csv creado a partir de preprocess_es1.py
