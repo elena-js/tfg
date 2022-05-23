@@ -1,6 +1,6 @@
 # Info ficheros
-- b.json -> fichero json de comentarios en inglés
-- c.json -> fichero json de comentarios en español
+- comments.json -> fichero json de comentarios en inglés
+- comentarios.json -> fichero json de comentarios en español
 - preprocess.py -> preprocess principal con an. sent. nltk y 3 etiquetas sent(pos, neu, neg)
 - preprocess1.py -> preprocess con an. sent. nltk y 2 etiquetas sent(pos, neg)
 - preprocess2.py -> preprocess con an. sent. textblob y 3 etiquetas sent(pos, neu, neg)
