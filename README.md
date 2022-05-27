@@ -1,12 +1,12 @@
 # Info ficheros
 - comments.json -> fichero json de comentarios en inglés
 - comentarios.json -> fichero json de comentarios en español
-- preprocess.py -> preprocess principal con an. sent. nltk y 3 etiquetas sent(pos, neu, neg)
+- preprocess.py -> preprocess principal con an. sent. nltk y 3 etiquetas sent(pos, neu, neg) (ACTUALIZADO)
 - preprocess1.py -> preprocess con an. sent. nltk y 2 etiquetas sent(pos, neg)
 - preprocess2.py -> preprocess con an. sent. textblob y 3 etiquetas sent(pos, neu, neg)
 - preprocess_es1 -> preprocess con an. sent. sas (español) y 2 etiquetas sent(pos, neg)
 - preprocess_es2 -> preprocess con an. sent. sas (español) y 3 etiquetas sent(pos, neu, neg)
-- data.csv -> csv creado a partir de preprocess.py (no actualizado)
+- data.csv -> csv creado a partir de preprocess.py (NO ACTUALIZADO)
 - data1.csv -> csv creado a partir de preprocess1.py
 - data2.csv -> csv creado a partir de preprocess2.py
 - data_es1 -> csv creado a partir de preprocess_es1.py
