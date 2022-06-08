@@ -6,7 +6,7 @@
 - preprocess2.py -> preprocess con an. sent. textblob y 3 etiquetas sent(pos, neu, neg)
 - preprocess_es1 -> preprocess con an. sent. sas (español) y 2 etiquetas sent(pos, neg)
 - preprocess_es2 -> preprocess con an. sent. sas (español) y 3 etiquetas sent(pos, neu, neg)
-- data.csv -> csv creado a partir de preprocess.py (NO ACTUALIZADO)
+- data.csv -> csv creado a partir de preprocess.py
 - data1.csv -> csv creado a partir de preprocess1.py
 - data2.csv -> csv creado a partir de preprocess2.py
 - data_es1 -> csv creado a partir de preprocess_es1.py
