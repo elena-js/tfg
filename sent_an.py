@@ -40,13 +40,28 @@ x_test = test_vectors
 
 # CLASIFICADOR SVM ----------------------------------------------------------------------------------
 
-# definir algoritmo
+# DEFINIR ALGORITMO
+
+# SVC
 from sklearn.svm import SVC
 algoritmo = SVC(kernel='linear')
 
 # Naive Bayes
 from sklearn.naive_bayes import GaussianNB
 #algoritmo = GaussianNB()
+
+# Logistic Regression
+from sklearn.linear_model import LogisticRegression
+#algoritmo = LogisticRegression()
+
+# cross-validation
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+from numpy import mean
+from numpy import std
+#cv = KFold(n_splits=3, random_state=1, shuffle=True)
+#scores = cross_val_score(algoritmo, x_train, y_train, scoring='accuracy', cv=cv, n_jobs=-1)
+#print('Accuracy: %.3f (%.3f)' % (mean(scores), std(scores)))
 
 # entrenar modelo
 algoritmo.fit(x_train, y_train)
@@ -71,25 +86,44 @@ report = classification_report(y_test, y_pred)
 print('\nReport:')
 print(report)
 
+# curva roc
+import matplotlib.pyplot as plt
+from sklearn.metrics import roc_curve
+
+def plot_roc_curve(fper, tper):
+    plt.plot(fper, tper, color='red', label='ROC')
+    plt.plot([0, 1], [0, 1], color='green', linestyle='--')
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver Operating Characteristic Curve')
+    plt.legend()
+    plt.show()
+#fper, tper, thresholds = roc_curve(y_test, y_pred)
+#plot_roc_curve(fper, tper)
+
 # obtener + datos (ej:user)
 neg_users = []
 likes = []
+mentioned = []
 i = 0
 while i < len(y_pred):
     if y_pred[i]== 'neg':
         c = x_test0.iloc[i]
-        print('\nComentario negativo:\n' + c['comment'])
+        #print('\nComentario negativo:\n' + c['comment'])
         if c['user'] not in neg_users:
             neg_users.append([c['user'], 1])
             likes.append(c['likes'])
-            print('likes:' + str(c['likes']))
+            mentioned.append(c['mentioned'])
+            #print('likes:' + str(c['likes']))
         else:
             for user in neg_users:
                 if user[0] == c['user']:
                     user[1] += 1          
     i+=1
-print('\nUsuarios que han realizado algún comentario negativo:')
-print(neg_users)
+#print('\nUsuarios que han realizado algún comentario negativo:')
+#print(neg_users)
+
+#print(mentioned)
 
 # ver numero de comentarios negativos
 num_neg = len(likes)
