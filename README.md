@@ -11,7 +11,7 @@
 - data2.csv -> csv creado a partir de preprocess2.py
 - data_es1 -> csv creado a partir de preprocess_es1.py
 - data_es2 -> csv creado a partir de preprocess_es2.py
-- sent_an.py -> sistema detección comentarios negativos
+- sent_an.py -> sistema detección comentarios negativos (ACTUALIZADO)
 - emoji.csv -> dataset de emoji sentiment ranking
 - emoji_sent.py -> asigna valor de sentimiento a cada emoji
 - sent_emojis.csv -> csv creado a partir de emoji_sent.py
