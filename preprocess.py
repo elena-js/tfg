@@ -16,7 +16,8 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.sentiment.util import *
 
 # obtencion del array de comentarios a partir del json
-f = open("comments.json", "r")
+f = open("dan/julio2021.json", "r")
+#f = open("comments.json", "r")
 content = f.read()
 info_com = json.loads(content)
 
@@ -35,13 +36,13 @@ for item in info_com:
             likes.append(item['likes_count'])
 
 # variables del preprocess
-wordlist = [] # array bow
-freq = [] # array frecuencias de aparicion -- TODAVÍA NO UTILIZADO
+wordlist = [] # array bow -- NO SE UTILIZA
 cl_comments = [] # array comentarios limpios
 mentions = [] # array menciones
 emojis = [] # array emojis
 n_words = [] # array número de palabras
 n_emojis = [] # array número de emojis
+comments_sa = []
 
 for comment in comments_in:
     
@@ -92,19 +93,23 @@ for comment in comments_in:
     stops.remove('no')
 
     tokens = [t for t in tokens if t not in stops]
-    
+
+    # comentario para el sentiment analyzer
+    comment_sa = (' '.join(tokens))
+    comments_sa.append(comment_sa)
+
     # stemming/lemmatization
     stemmer = PorterStemmer()
     lemmatizer = WordNetLemmatizer()
     bow = []
-    '''
+    
     for t in tokens:
         bow.append(stemmer.stem(t))
         #bow.append(lemmatizer.lemmatize(t))
-    '''
+    
     # juntar palabras y volver a tokenizar para quitar espacios
-    #comment = (' '.join(bow))
-    comment = (' '.join(tokens))
+    comment = (' '.join(bow))
+    #comment = (' '.join(tokens))
     bow = word_tokenize(comment)
     n_words.append(len(bow))
     comment = (' '.join(bow))
@@ -161,9 +166,9 @@ for c in range(len(cl_comments)):
     
     # teniendo en cuenta emojis:
     '''
-    if s >= 0.5:
+    if s >= 0.4:
         sent.append("pos")
-    elif s <= -0.5:
+    elif s <= -0.4:
         sent.append("neg")
     else:
         sent.append("neu")
