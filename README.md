@@ -1,7 +1,7 @@
-# Info ficheros
+# Info ficheros - FALTA ACTUALIZAR ARCHIVOS
 - comments.json -> fichero json de comentarios en inglés
 - comentarios.json -> fichero json de comentarios en español
-- preprocess.py -> preprocess principal con an. sent. nltk y 3 etiquetas sent(pos, neu, neg) (ACTUALIZADO)
+- preprocess.py -> preprocess principal con an. sent. nltk y 3 etiquetas sent(pos, neu, neg)
 - preprocess1.py -> preprocess con an. sent. nltk y 2 etiquetas sent(pos, neg)
 - preprocess2.py -> preprocess con an. sent. textblob y 3 etiquetas sent(pos, neu, neg)
 - preprocess_es1 -> preprocess con an. sent. sas (español) y 2 etiquetas sent(pos, neg)
@@ -11,7 +11,7 @@
 - data2.csv -> csv creado a partir de preprocess2.py
 - data_es1 -> csv creado a partir de preprocess_es1.py
 - data_es2 -> csv creado a partir de preprocess_es2.py
-- sent_an.py -> sistema detección comentarios negativos (ACTUALIZADO)
+- sent_an.py -> sistema detección comentarios negativos
 - emoji.csv -> dataset de emoji sentiment ranking
 - emoji_sent.py -> asigna valor de sentimiento a cada emoji
 - sent_emojis.csv -> csv creado a partir de emoji_sent.py
