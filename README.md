@@ -1,20 +1,15 @@
 # Info ficheros - FALTA ACTUALIZAR ARCHIVOS
+
 - caradelevigne -> carpeta con contenido del perfil @caradelevigne
 - danbilzerian -> carpeta con contenido del perfil @danbilzerian
 - kourtneykardash -> carpeta con contenido del perfil @kourtneykardash
-- comments.json -> fichero json de comentarios en inglés
-- comentarios.json -> fichero json de comentarios en español
-- preprocess.py -> preprocess principal con an. sent. nltk y 3 etiquetas sent(pos, neu, neg)
-- preprocess1.py -> preprocess con an. sent. nltk y 2 etiquetas sent(pos, neg)
-- preprocess2.py -> preprocess con an. sent. textblob y 3 etiquetas sent(pos, neu, neg)
-- preprocess_es1 -> preprocess con an. sent. sas (español) y 2 etiquetas sent(pos, neg)
-- preprocess_es2 -> preprocess con an. sent. sas (español) y 3 etiquetas sent(pos, neu, neg)
-- data.csv -> csv creado a partir de preprocess.py
-- data1.csv -> csv creado a partir de preprocess1.py
-- data2.csv -> csv creado a partir de preprocess2.py
-- data_es1 -> csv creado a partir de preprocess_es1.py
-- data_es2 -> csv creado a partir de preprocess_es2.py
-- sent_an.py -> sistema detección comentarios negativos
+
+- preprocess.py -> tratamiento de los datos
+
 - emoji.csv -> dataset de emoji sentiment ranking
 - emoji_sent.py -> asigna valor de sentimiento a cada emoji
 - sent_emojis.csv -> csv creado a partir de emoji_sent.py
+
+- sent_an.py -> sistema detección comentarios negativos
+
+- obtencioninfo.py -> aplicación del sistema a casos prácticos (obtención estadísticas de ciberacoso)
