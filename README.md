@@ -1,4 +1,7 @@
 # Info ficheros - FALTA ACTUALIZAR ARCHIVOS
+- caradelevigne -> carpeta con contenido del perfil @caradelevigne
+- danbilzerian -> carpeta con contenido del perfil @danbilzerian
+- kourtneykardash -> carpeta con contenido del perfil @kourtneykardash
 - comments.json -> fichero json de comentarios en inglés
 - comentarios.json -> fichero json de comentarios en español
 - preprocess.py -> preprocess principal con an. sent. nltk y 3 etiquetas sent(pos, neu, neg)
