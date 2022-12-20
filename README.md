@@ -1,4 +1,4 @@
-# Info ficheros - FALTA ACTUALIZAR ARCHIVOS
+# Info ficheros
 
 - caradelevigne -> carpeta con contenido del perfil @caradelevigne
 - danbilzerian -> carpeta con contenido del perfil @danbilzerian
