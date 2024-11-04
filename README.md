@@ -1,5 +1,9 @@
 # Desarrollo de un Sistema de Detección de Ciberacoso en Redes Sociales
 
+## Lista de Contenido
+
+## Estructura del proyecto
+
 ## Descripción de los ficheros
 
 - **caradelevigne** -> Carpeta con contenido del perfil @caradelevigne
@@ -15,3 +19,7 @@
 - **sent_an.py** -> Sistema detección comentarios negativos
 
 - **obtencioninfo.py** -> Aplicación del sistema a casos prácticos (obtención estadísticas de ciberacoso)
+
+## Instalación
+
+## Uso
