@@ -1,4 +1,6 @@
-# Info ficheros
+# Desarrollo de un Sistema de Detección de Ciberacoso en Redes Sociales
+
+## Descripción de los ficheros
 
 - **caradelevigne** -> Carpeta con contenido del perfil @caradelevigne
 - **danbilzerian** -> Carpeta con contenido del perfil @danbilzerian
