@@ -1,7 +1,13 @@
 # Desarrollo de un Sistema de Detección de Ciberacoso en Redes Sociales
 
-## Lista de Contenido
+Este proyecto tiene como resultado un sistema que, a partir de comentarios extraídos de perfiles públicos de la red social Instagram, detecta si se tratan de comentarios positivos o negativos. Para ello utiliza un algoritmo de Machine Learning supervisado, concretamente de clasificación (SVM).
 
+## Lista de Contenido
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Descripción de los ficheros](#descripción-de-los-ficheros)
+- [Instalación](#instalación)
+- [Uso](#uso)
+  
 ## Estructura del proyecto
 
 ## Descripción de los ficheros
